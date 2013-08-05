@@ -6,25 +6,47 @@ This cookbook install anyenv and \*env and specified language and versions
 Attributes
 ----------
 
-TODO: Write
+user.name: user name
+user.home: home directory
+
+anyenv.(perl|ruby|node|python|php)
+  .versions: install versions
+  .global: set to global version
+
 
 Usage
 -----
 #### cookbooks-anyenv::default
-TODO: Write usage instructions for each cookbook.
 
 ```json
 {
-  "name":"my_node",
-  "run_list": [
-    "recipe[cookbooks-anyenv]"
-  ]
+  "user": {
+    "name": "vagrant",
+    "home": "/home/vagrant"
+  }
+  "anyenv": {
+    "perl": {
+      "versions":   ["5.18.0"],
+      "global":     "5.18.0"
+    },
+    "ruby": {
+      "versions":   ["2.0.0-p247"],
+      "global":     "2.0.0-p247"
+    },
+    "node": {
+      "versions":  ["v0.10.15"],
+      "global":    "v0.10.15"
+    },
+    "python": {
+      "versions":   ["3.3.2"],
+      "global":     "3.3.2"
+    },
+  }
 }
 ```
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
 
 e.g.
 1. Fork the repository on Github
@@ -36,4 +58,14 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: koba04
+
+The MIT License
+
+Copyright (c) 2013 koba04
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
