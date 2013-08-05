@@ -23,7 +23,7 @@ Usage
   "user": {
     "name": "vagrant",
     "home": "/home/vagrant"
-  }
+  },
   "anyenv": {
     "perl": {
       "versions":   ["5.18.0"],

@@ -1,6 +1,6 @@
 name             'cookbooks-anyenv'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'koba04'
+maintainer_email 'koba0004 ___at___ gmail.com'
 license          'All rights reserved'
 description      'Installs/Configures cookbooks-anyenv'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
