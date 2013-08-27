@@ -5,8 +5,8 @@ default[:user] = {
 
 default[:anyenv] = {
   "perl"    => {
-    versions:   %w{5.18.0},
-    global:     "5.18.0"
+    versions:   %w{5.18.1},
+    global:     "5.18.1"
   },
 
   "ruby"    => {
@@ -15,13 +15,13 @@ default[:anyenv] = {
   },
 
   "node"    => {
-    versions:  %w{v0.10.15},
-    global:    "v0.10.15"
+    versions:  %w{v0.10.17},
+    global:    "v0.10.17"
   },
 
   "python"  => {
-    versions:   %w{3.3.2},
-    global:     "3.3.2"
+    versions:   %w{2.7.5},
+    global:     "2.7.5"
   },
 
 # not to work...
