@@ -26,20 +26,20 @@ Usage
   },
   "anyenv": {
     "perl": {
-      "versions":   ["5.18.0"],
-      "global":     "5.18.0"
+      "versions":   ["5.18.1"],
+      "global":     "5.18.1"
     },
     "ruby": {
       "versions":   ["2.0.0-p247"],
       "global":     "2.0.0-p247"
     },
     "node": {
-      "versions":  ["v0.10.15"],
-      "global":    "v0.10.15"
+      "versions":  ["v0.10.17"],
+      "global":    "v0.10.17"
     },
     "python": {
-      "versions":   ["3.3.2"],
-      "global":     "3.3.2"
+      "versions":   ["2.7.5"],
+      "global":     "2.7.5"
     },
   }
 }
