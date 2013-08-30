@@ -13,6 +13,7 @@ install_packages = %w{
   curl
   libsqlite3-dev
   libbz2-dev
+  git
 }
 
 install_packages.each do |p|
