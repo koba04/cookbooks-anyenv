@@ -33,7 +33,7 @@ bash "anyenv" do
     echo 'export PATH="$HOME/.anyenv/bin:$PATH"' >> $HOME/.bashrc
     echo 'eval "$(anyenv init -)"' >> $HOME/.bashrc
   EOC
-  not_if { File.exist?("$HOME/.anyenv") }
+  not_if { File.exist?("#{node[:user][:home]}/.anyenv") }
 end
 
 # install *env
