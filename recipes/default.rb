@@ -11,7 +11,6 @@
 install_packages = %w{
   make
   curl
-  libsqlite3-dev
   libbz2-dev
   git
 }
